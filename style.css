@@ -1,53 +1,58 @@
 
-body {
+body, html {
   margin: 0;
-  font-family: 'Helvetica Neue', sans-serif;
-  background: linear-gradient(135deg, #f4f8ff, #eef1fb);
-  color: #333;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.hero {
+  background: url('background.png') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  color: #cceaff;
   text-align: center;
 }
-header {
-  background-color: rgba(108, 99, 255, 0.1);
-  padding: 60px 20px;
-}
-header h1 {
-  font-size: 3em;
-  color: #6c63ff;
-}
-header p {
-  font-size: 1.2em;
-  color: #666;
-}
-.intro {
-  padding: 50px 20px;
-}
-.intro h2 {
-  font-size: 2em;
-  color: #444;
-}
-.intro p {
-  font-size: 1em;
-  color: #555;
-}
-.sectors {
-  background-color: #fff;
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
   padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.sectors h3 {
-  font-size: 1.5em;
+
+h1 {
+  font-size: 2em;
   margin-bottom: 20px;
 }
-.sectors ul {
-  list-style: none;
-  padding: 0;
+
+.sectors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
 }
-.sectors li {
-  font-size: 1.1em;
-  margin: 10px 0;
-}
-footer {
-  background-color: #f0f0f0;
-  padding: 20px;
+
+.sectors span {
+  border: 1px solid #5bd7ff;
+  border-radius: 20px;
+  padding: 10px 15px;
   font-size: 0.9em;
-  color: #777;
+  background-color: rgba(0, 102, 204, 0.2);
+}
+
+.vision {
+  font-size: 0.95em;
+  line-height: 1.8;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  color: #aaa;
+  background-color: #000;
+  padding: 10px;
 }
